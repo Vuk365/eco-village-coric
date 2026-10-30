@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#142b25">
+<title>Eco Village Ćorić | Montenegro</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--green:#142b25;--gold:#b79a65;--cream:#f7f5ef}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--green);font-family:'DM Sans',sans-serif}
+h1,h2,h3{font-family:'Playfair Display',serif;font-weight:500}
+a{text-decoration:none;color:inherit}
+header{height:76px;display:flex;justify-content:space-between;align-items:center;padding:0 6%;background:#f7f5ef;position:sticky;top:0;z-index:20;border-bottom:1px solid #ddd}
+.logo{font-family:'Playfair Display',serif;font-size:23px}
+.logo small{display:block;font:10px 'DM Sans';letter-spacing:3px;margin-top:4px}
+nav{display:flex;gap:24px;font-size:13px}
+.btn{display:inline-block;background:var(--gold);color:#172820;padding:16px 26px;border-radius:3px;font-weight:700;font-size:13px}
+.hero{min-height:82vh;display:flex;align-items:center;justify-content:center;text-align:center;color:white;padding:50px 20px;background:linear-gradient(#081e19a8,#081e19a8),url('https://images.unsplash.com/photo-1448375240586-882707db888b?w=1600') center/cover}
+.hero h1{font-size:clamp(48px,8vw,94px);line-height:1.08;margin:18px 0}
+.eyebrow{letter-spacing:4px;text-transform:uppercase;font-size:11px;font-weight:700;color:var(--gold)}
+.hero p{font-size:17px;max-width:560px;margin:0 auto 30px;line-height:1.8}
+section{padding:90px 7%}
+section h2{font-size:clamp(35px,5vw,57px);margin:15px 0 25px}
+.intro{text-align:center;max-width:760px;margin:auto}
+.intro p,.desc{color:#62716b;line-height:1.9}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:40px}
+.card{background:white;overflow:hidden;border-radius:7px}
+.card img{width:100%;height:260px;object-fit:cover}
+.card div{padding:25px}
+.card h3{font-size:25px;margin:0 0 10px}
+.card p{font-size:14px;color:#68756e;line-height:1.8}
+.dark{background:var(--green);color:white}
+.dark .desc{color:#cad5cf}
+.stats{display:flex;justify-content:space-around;gap:25px;flex-wrap:wrap;text-align:center;margin-top:45px}
+.stat strong{font-family:'Playfair Display';font-size:55px;font-weight:400;display:block;color:var(--gold)}
+.stat span{font-size:13px;color:#cad5cf}
+.tags{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:35px}
+.tags span{border:1px solid #52675e;border-radius:40px;padding:12px 18px;font-size:13px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:35px}
+.gallery img{width:100%;height:260px;object-fit:cover;border-radius:5px}
+.gallery img:first-child{grid-column:span 2}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.split img{width:100%;border-radius:6px}
+footer{background:#0c201b;color:#d6dfd9;padding:60px 7%;text-align:center}
+footer h2{color:white}
+footer p{font-size:13px;line-height:2}
+.mobilebook{display:none}
+@media(max-width:750px){
+header{padding:0 5%;height:72px}
+.logo{font-size:19px}
+nav{gap:12px;font-size:11px}
+nav a:not(:last-child){display:none}
+.hero{min-height:75vh}
+section{padding:65px 6%}
+.grid,.split{grid-template-columns:1fr}
+.gallery{grid-template-columns:1fr 1fr}
+.gallery img{height:170px}
+.gallery img:first-child{grid-column:span 2;height:240px}
+.mobilebook{display:block;position:fixed;bottom:0;left:0;width:100%;padding:12px 18px;background:#f7f5ef;z-index:30;text-align:center;border-top:1px solid #ddd}
+.mobilebook .btn{width:100%}
+footer{padding-bottom:110px}
+}
+</style>
+</head>
+<body>
+
+<header>
+<a href="#" class="logo">Eco Village Ćorić
+<small>MOJKOVAC · MONTENEGRO</small></a>
+<nav>
+<a href="#stay">Accommodation</a>
+<a href="#reviews">Reviews</a>
+<a href="#gallery">Gallery</a>
+<a href="#booking" class="btn">BOOK NOW</a>
+</nav>
+</header>
+
+<div class="hero">
+<div>
+<div class="eyebrow">Discover Montenegro</div>
+<h1>Escape to<br>the extraordinary.</h1>
+<p>Experience the beauty of untouched nature, peaceful mountain mornings and authentic Montenegrin hospitality.</p>
+<a href="#stay" class="btn">EXPLORE OUR RETREAT</a>
+</div>
+</div>
+
+<section>
+<div class="intro">
+<div class="eyebrow">Welcome to Eco Village Ćorić</div>
+<h2>Where nature feels like home.</h2>
+<p>Hidden in the beautiful mountains of Mojkovac, Eco Village Ćorić offers a peaceful escape from everyday life. Discover cozy accommodation, fresh mountain air and warm family hospitality.</p>
+</div>
+</section>
+
+<section id="stay" style="background:#eeefe8">
+<div class="eyebrow">Our accommodation</div>
+<h2>Stay somewhere special.</h2>
+<p class="desc">Find your perfect mountain escape.</p>
+<div class="grid">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?w=900" alt="Mountain cabin">
+<div><h3>Deluxe Bungalow</h3><p>A comfortable escape surrounded by natural beauty.</p><a href="#booking">Explore stay →</a></div>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=900" alt="Wooden cabin">
+<div><h3>Deluxe Villa</h3><p>More space to unwind and enjoy the mountains.</p><a href="#booking">Explore stay →</a></div>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=900" alt="Apartment interior">
+<div><h3>Superior Apartment</h3><p>Comfort, privacy and a relaxing atmosphere.</p><a href="#booking">Explore stay →</a></div>
+</div>
+</div>
+</section>
+
+<section id="reviews" class="dark">
+<div class="intro">
+<div class="eyebrow">Guest experiences</div>
+<h2>What our guests say.</h2>
+<p class="desc">A place guests love to return to.</p>
+</div>
+<div class="stats">
+<div class="stat"><strong>9.8<small style="font-size:23px">/10</small></strong><span>Booking.com</span></div>
+<div class="stat"><strong>5.0<small style="font-size:23px">/5</small></strong><span>Google</span></div>
+<div class="stat"><strong>5.0<small style="font-size:23px">/5</small></strong><span>Tripadvisor</span></div>
+</div>
+<div class="tags">
+<span>Warm and welcoming hosts</span>
+<span>Beautiful mountain views</span>
+<span>Peace and tranquility</span>
+<span>Traditional homemade food</span>
+</div>
+</section>
+
+<section id="gallery">
+<div class="eyebrow">Explore the village</div>
+<h2>A glimpse of paradise.</h2>
+<p class="desc">Discover the beauty of our mountain retreat.</p>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=1200" alt="Forest">
+<img src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=700" alt="Cabin">
+<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=700" alt="Mountain lake">
+<img src="https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?w=700" alt="Accommodation">
+<img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=700" alt="Mountains">
+</div>
+</section>
+
+<section class="dark">
+<div class="split">
+<div>
+<div class="eyebrow">Authentic hospitality</div>
+<h2>More than just a place to stay.</h2>
+<p class="desc">Experience warm hospitality, homemade food and unforgettable moments surrounded by nature.</p>
+<p class="desc">Explore the beautiful surroundings of Mojkovac and discover the landscapes of northern Montenegro.</p>
+</div>
+<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=900" alt="Nature">
+</div>
+</section>
+
+<section id="booking" style="text-align:center">
+<div class="eyebrow">Your mountain escape awaits</div>
+<h2>Make memories that last.</h2>
+<p class="desc">Check accommodation options and plan your stay at Eco Village Ćorić.</p>
+<a href="https://www.booking.com/Share-E7zPdB" target="_blank" rel="noopener noreferrer" class="btn">RESERVE ON BOOKING.COM</a>
+</section>
+
+<footer>
+<h2>Eco Village Ćorić</h2>
+<p>Mojkovac · Montenegro</p>
+<p>Nature. Comfort. Hospitality.</p>
+<p>© 2026 Eco Village Ćorić</p>
+</footer>
+
+<div class="mobilebook">
+<a class="btn" href="https://www.booking.com/Share-E7zPdB" target="_blank" rel="noopener noreferrer">BOOK YOUR STAY →</a>
+</div>
+
+</body>
+</html>
